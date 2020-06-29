@@ -1,1 +1,4 @@
 /* pages/home/home.wxss */
+.out-scroll{
+  margin-bottom: 50px;
+}

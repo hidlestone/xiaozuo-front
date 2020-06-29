@@ -1,17 +1,21 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/home/home",
     "pages/map/map",
     "pages/my/my",
     "pages/post/post",
-    "pages/index/index"
+    "pages/about/about"
   ],
+  "usingComponents": {
+    "cu-custom": "/static/colorui/components/cu-custom"
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "小岞",
     "navigationBarTextStyle": "black"
+
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

@@ -7,4 +7,9 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
+page{
+  height: 100%;
+}
+@import "static/colorui/main.wxss";
+@import "static/colorui/icon.wxss";

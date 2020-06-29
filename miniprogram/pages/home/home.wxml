@@ -1,2 +1,63 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<scroll-view  class="out-scroll"  scroll-y="true" >
+  <swiper class="screen-swiper square-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+    <swiper-item wx:for="{{swiperList}}" wx:key>
+      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+      <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+    </swiper-item>
+  </swiper>
+  <view class="cu-card case no-card">
+    <view class="cu-item shadow">
+      <view class="image">
+        <image src="https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg" mode="widthFix"></image>
+        <view class="cu-tag bg-red">活动</view>
+        <view class="cu-bar bg-shadeBottom">
+          <text class="text-cut">三山宫进香大典</text>
+        </view>
+      </view>
+      <view class="cu-list menu-avatar">
+        <view class="cu-item">
+          <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
+          <view class="content flex-sub">
+            <view class="text-grey">pany</view>
+            <view class="text-gray text-sm flex justify-between">
+              2020-06-29
+              <view class="text-gray text-sm">
+                <text class="cuIcon-attentionfill margin-lr-xs"></text> 10
+                <text class="cuIcon-appreciatefill margin-lr-xs"></text> 20
+                <text class="cuIcon-messagefill margin-lr-xs"></text> 30
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="cu-card case  no-card">
+    <view class="cu-item shadow">
+      <view class="image">
+        <image src="https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg" mode="widthFix"></image>
+        <view class="cu-tag bg-blue">攻略</view>
+        <view class="cu-bar bg-shadeBottom">
+          <text class="text-cut">小岞不容错过的十大美景</text>
+        </view>
+      </view>
+      <view class="cu-list menu-avatar">
+        <view class="cu-item">
+          <view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
+          <view class="content flex-sub">
+            <view class="text-grey">pany</view>
+            <view class="text-gray text-sm flex justify-between">
+              2020-06-29
+              <view class="text-gray text-sm">
+                <text class="cuIcon-attentionfill margin-lr-xs"></text> 10
+                <text class="cuIcon-appreciatefill margin-lr-xs"></text> 20
+                <text class="cuIcon-messagefill margin-lr-xs"></text> 30
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

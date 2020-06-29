@@ -1,2 +1,13 @@
 <!--pages/map/map.wxml-->
-<text>pages/map/map.wxml</text>
+<van-sticky>
+  <view  class="sticky-pannel"  >
+    <van-tabs active="{{ active }}" bind:change="tabsChange">
+     <van-tab  wx:for="{{markers}}"  name='{{item.id}}' title="{{item.title}}"></van-tab>
+    </van-tabs>
+  </view>
+</van-sticky>
+<view  class="flex-view">
+  <map longitude="{{jingdu}}" latitude="{{weidu}}"  class="map-wx"  bind:markertap="markertap"  markers="{{markers}}" ></map>
+  <image  wx:for="{{images}}" src="{{item}}" mode="aspectFill" class="image-jingdian"  ></image>
+</view>
+

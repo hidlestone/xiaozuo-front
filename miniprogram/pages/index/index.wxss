@@ -1,1 +1,4 @@
 /* pages/index/index.wxss */
+.fill-full{
+  height: 100%;
+}

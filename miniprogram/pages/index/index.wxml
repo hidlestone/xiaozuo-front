@@ -1,2 +1,13 @@
 <!--pages/index/index.wxml-->
-
+<view class="fill-full">
+  <home  wx:if="{{active=='home'}}" ></home>
+  <my-map  wx:if="{{active=='my-map'}}" ></my-map>
+  <post  wx:if="{{active=='post'}}" ></post>
+  <my  wx:if="{{active=='my'}}" ></my>
+</view>
+<van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item icon="home-o"  name='home'  >小岞</van-tabbar-item>
+  <van-tabbar-item icon="search"  name='my-map'  >攻略</van-tabbar-item>
+  <van-tabbar-item icon="friends-o"  name='post'  >游记</van-tabbar-item>
+  <van-tabbar-item icon="setting-o"  name='my'  >我的</van-tabbar-item>
+</van-tabbar>

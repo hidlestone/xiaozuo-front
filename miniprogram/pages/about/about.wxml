@@ -1,0 +1,12 @@
+<!--pages/about/about.wxml-->
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>关于小岞小程序</view>
+  <view class='text-content'>
+    <view>Hi！欢迎来到小岞！</view>
+    <view class='margin-top-sm'>该项目是我们两个人共同开发的一款介绍小岞的小程序，框架采用了有赞的vant-weapp和文晓港的color-ui，小程序旨在让大家更好的了解小岞的美景，美食和文化。如果您也喜欢这款小程序的话，希望您能多推荐给您身边的亲朋好友。</view>
+    <view class='margin-top-sm'>小程序里的图片除了我们自己拍的照片外，有些也来自网络，如果图片侵犯了您的权益，请您联系我们，我们将在第一时间撤掉图片。</view>
+    <view class='margin-top-sm'>联系邮箱：nanq2018@163.com</view>
+    <view class='margin-top-sm'>更多功能敬请期待！</view>
+    <view class='margin-top-sm text-right'>by： 培锋，南强</view>
+  </view>
+</view>
