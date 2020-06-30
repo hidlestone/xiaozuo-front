@@ -8,6 +8,6 @@
 </van-sticky>
 <view  class="flex-view">
   <map longitude="{{jingdu}}" latitude="{{weidu}}"  class="map-wx"  bind:markertap="markertap"  markers="{{markers}}" ></map>
-  <image  wx:for="{{images}}" src="{{item}}" mode="aspectFill" class="image-jingdian"  ></image>
+  <image  wx:for="{{images}}" src="{{item}}" mode="aspectFill" class="image-jingdian" bindtap="imageClick"  ></image>
 </view>
 

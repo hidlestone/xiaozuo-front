@@ -54,6 +54,7 @@ Component({
       latitude:24.944551,
       longitude:119.004115,
       title:"南华寺",
+      images:['https://ossweb-img.qq.com/images/lol/web201310/skin/big25011.jpg','https://ossweb-img.qq.com/images/lol/web201310/skin/big25011.jpg','https://ossweb-img.qq.com/images/lol/web201310/skin/big25011.jpg','https://ossweb-img.qq.com/images/lol/web201310/skin/big25011.jpg','https://ossweb-img.qq.com/images/lol/web201310/skin/big25011.jpg','https://ossweb-img.qq.com/images/lol/web201310/skin/big25011.jpg'],
     }],
     images:['https://ossweb-img.qq.com/images/lol/web201310/skin/big21016.jpg','https://ossweb-img.qq.com/images/lol/web201310/skin/big21016.jpg','https://ossweb-img.qq.com/images/lol/web201310/skin/big21016.jpg','https://ossweb-img.qq.com/images/lol/web201310/skin/big21016.jpg','https://ossweb-img.qq.com/images/lol/web201310/skin/big21016.jpg','https://ossweb-img.qq.com/images/lol/web201310/skin/big21016.jpg','https://ossweb-img.qq.com/images/lol/web201310/skin/big21016.jpg'],
   },
@@ -66,7 +67,10 @@ Component({
       })
     },
     markertap:function(e){
-      console.log(e.detail)  
+      console.log(e.detail) 
+      this.setData({
+        active:e.detail.markerId,
+      }) 
     },
     imageClick:function(){
       wx.previewImage({
