@@ -17,6 +17,12 @@
     </view>
     <view class="cu-item arrow">
       <navigator class="content" url="/pages/about/about" hover-class="none">
+        <text class="cuIcon-commentfill text-orange"></text>
+        <text class="text-grey">我的回复</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/about" hover-class="none">
         <text class="cuIcon-favorfill text-blue"></text>
         <text class="text-grey">关于小岞小程序</text>
       </navigator>

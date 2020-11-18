@@ -1,0 +1,10 @@
+/* pages/postadd/postadd.wxss */
+.out-view{
+  margin-bottom: 50px;
+}
+.view-button{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
